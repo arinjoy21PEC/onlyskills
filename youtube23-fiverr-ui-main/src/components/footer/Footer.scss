@@ -3,24 +3,46 @@
   justify-content: center;
   color: #666;
   margin: 50px 0px;
+  @media (max-width: 480px){
+    padding-left: 5%;
+  }
 
   img {
     width: 24px;
     height: 24px;
+    @media (max-width: 480px){
+      width: 12px;
+      height: 12px;
+    }
   }
 
   .container {
     width: 1400px;
+    @media (max-width: 480px){
+      width:100%
+    }
     .top {
       display: flex;
       justify-content: space-between;
+      @media (max-width: 480px){
+        flex-wrap: wrap;
+        gap: 2px;
+      }
       .item {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media (max-width: 480px){
+          width: 20%;
+          font-size: 8px;
+          gap: 5px;
+        }
         h2 {
           font-size: 16px;
           color: #555;
+          @media (max-width: 480px){
+            font-size: 10px;
+          }
         }
         span {
           font-weight: 300;
@@ -37,12 +59,22 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 480px){
+        flex-direction: column;
+        align-items: center;
+        .left h2 {
+          font-size: 24px;
+        }
+      }
 
       .left {
         width: max-content;
         display: flex;
         align-items: center;
         gap: 20px;
+        @media (max-width: 480px){
+          
+        }
 
         span {
           font-size: 13px;
@@ -54,16 +86,36 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        @media (max-width: 480px){
+          img {
+            width: 20px;
+          }
+        }
 
         .social {
           display: flex;
           gap: 20px;
+          @media (max-width: 480px){
+            img{
+              width: 24px;
+            }
+          }
         }
 
         .link {
           display: flex;
           align-items: center;
           gap: 10px;
+          @media (max-width: 480px){
+            margin-bottom: 400px;
+            img {
+              width: 16px;
+            }
+            span {
+              font-size: 12px;
+            }
+
+          }
         }
       }
     }

@@ -9,6 +9,13 @@
     .title {
       display: flex;
       justify-content: space-between;
+      @media (max-width:480px){
+        padding-top: 5%;
+        padding-left: 5%;
+        h1{
+          font-size: 20px;
+        }
+      }
 
       button {
         background-color: #1dbf73;
@@ -22,11 +29,21 @@
 
     table {
       width: 100%;
+      @media (max-width:480px){
+        padding-left: 5%;
+        width: 370px;
+      }
 
       tr {
         height: 100px;
+        @media (max-width:480px){
+          font-size: 10px;
+        }
         th {
           text-align: left;
+          @media (max-width:480px){
+            font-size: 10px;
+          }
         }
         td {
           padding: 10px;

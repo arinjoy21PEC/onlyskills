@@ -2,16 +2,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 480px){
+      flex-direction: column;
+      padding-left: 25%;
+    }
   
     form {
       width: 960px;
       padding: 100px 0px;
       display: flex;
       gap: 120px;
+      @media (max-width: 480px){
+        width:480px;
+        padding: 50px 0px;
+        gap: 60px;
+        flex-direction: column;
+      }
   
       h1 {
         color: gray;
         margin-bottom: 20px;
+        @media (max-width: 480px){
+          font-size: 20px;
+        }
       }
   
       .left,
@@ -21,6 +34,10 @@
         flex-direction: column;
         gap: 10px;
         justify-content: space-between;
+        @media (max-width: 480px){
+          width: 300px;
+          flex-wrap: wrap;
+        }
   
         label {
           color: gray;

@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   color: #555;
+  @media (max-width: 480px){
+    padding-top: 5%;
+    padding-left: 3%;
+  }
 
   .container {
     width: 1400px;
