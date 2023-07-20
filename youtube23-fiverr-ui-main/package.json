@@ -6,7 +6,7 @@
   "proxy": "https://onlyskills-server.onrender.com/api",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "react-scripts build",
     "preview": "vite preview"
   },
   "dependencies": {
