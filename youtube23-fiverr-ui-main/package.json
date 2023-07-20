@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "https://onlyskills-server.onrender.com/api",
+  "proxy": "http://localhost:8800/api",
   "scripts": {
-    "dev": "vite",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "preview": "vite preview"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^2.1.1",
@@ -20,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.8.0",
+    "react-scripts": "^5.0.1",
     "sass": "^1.62.0"
   },
   "devDependencies": {
