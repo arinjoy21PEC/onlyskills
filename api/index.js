@@ -26,7 +26,7 @@ const connect = async () => {
         console.log(error)
     }
 }
-app.use(cors());
+app.use(cors({ origin: "https://onlyskills-ui.onrender.com", credentials: true}));
 app.use(express.json());
 app.use(cookieParser());
 
@@ -45,7 +45,7 @@ app.use((err, req, res, next) => {
     return res.status(errorStatus).send(errorMessage);
   });
 
-app.listen(8800,()=>{
+app.listen(8800||"https://onlyskills-server.onrender.com",()=>{
     connect()
     console.log("Backend Server is Running!")
 })
