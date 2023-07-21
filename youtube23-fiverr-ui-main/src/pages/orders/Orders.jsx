@@ -3,11 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Orders.scss";
 import { useQuery, QueryClient, QueryClientProvider } from "react-query";
 import newRequest from "../../utils/newRequest";
+import getCurrentUser from "../../utils/getCurrentUser";
 
 const queryClient = new QueryClient();
 
 const Orders = () => {
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const currentUser = getCurrentUser();
 
   const navigate = useNavigate();
   const { isLoading, error, data } = useQuery({

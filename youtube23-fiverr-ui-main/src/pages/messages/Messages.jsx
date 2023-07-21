@@ -2,12 +2,13 @@ import { useMutation, useQuery, useQueryClient, QueryClient} from "react-query";
 import React from "react";
 import { Link } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
+import getCurrentUser from "../../utils/getCurrentUser";
 import "./Messages.scss";
 import moment from "moment";
 const queryClient = new QueryClient();
 
 const Messages = () => {
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const currentUser = getCurrentUser();
 
   const queryClient = useQueryClient();
 
