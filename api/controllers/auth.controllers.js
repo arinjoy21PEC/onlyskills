@@ -41,7 +41,7 @@ export const login = async (req,res,next) =>{
             httpOnly:true,
             secure: true,
             sameSite: "none",
-            domain: ".onrender.com",
+            domain: "onrender.com",
             path: "/",
           })
           .status(200)
