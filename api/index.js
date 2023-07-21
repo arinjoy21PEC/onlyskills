@@ -26,7 +26,7 @@ const connect = async () => {
         console.log(error)
     }
 }
-app.use(cors({ origin: "https://onlyskills-ui.onrender.com", credentials: true}))
+app.use(cors())
 app.use(express.json());
 app.use(cookieParser());
 
