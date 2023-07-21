@@ -13,7 +13,7 @@ function login(){
   const handleSubmit = async (e)=>{
     e.preventDefault()
     try {
-      const res = await newRequest.post("http://localhost:8800/api/auth/login", { username, password });
+      const res = await newRequest.post("https://onlyskills-server.onrender.com/api/auth/login", { username, password });
       localStorage.setItem("currentUser", JSON.stringify(res.data));
       navigate("/")
     } catch (err) {

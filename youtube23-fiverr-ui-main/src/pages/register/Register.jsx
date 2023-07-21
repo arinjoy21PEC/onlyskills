@@ -47,7 +47,7 @@ function Register() {
     e.preventDefault();
     const url = await upload(file);
     try {
-      await newRequest.post("http://localhost:8800/api/auth/register", {
+      await newRequest.post("https://onlyskills-server.onrender.com/api/auth/register", {
         ...user,
         img: url,
       });
