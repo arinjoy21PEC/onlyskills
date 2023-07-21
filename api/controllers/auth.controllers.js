@@ -38,7 +38,10 @@ export const login = async (req,res,next) =>{
     
         const { password, ...info } = user._doc;
         res.cookie("accessToken", token, {
-            secure: true
+            secure: true,
+            sameSite: "none",
+            domain: ".onrender.com",
+            path: "/",
           })
           .status(200)
           .send(info);
