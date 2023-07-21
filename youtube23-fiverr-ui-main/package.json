@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "https://onlyskills-server.onrender.com/api",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
